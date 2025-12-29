@@ -27,11 +27,24 @@ export default function UnauthorizedPage() {
             boxShadow: '0 4px 20px rgba(0,0,0,0.05)',
             textAlign: 'center'
         }}>
-            <h1 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '16px', color: '#dc2626' }}>Access Denied</h1>
+            {/* @ts-ignore */}
+            {session?.user?.accessRequestStatus === 'approved' ? (
+                 <h1 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '16px', color: '#166534' }}>Role Updated!</h1>
+            ) : (
+                 <h1 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '16px', color: '#dc2626' }}>Access Denied</h1>
+            )}
+
             <p style={{ color: '#666', marginBottom: '24px', lineHeight: 1.6 }}>
-                You do not have permission to view the Admin Dashboard. 
-                {session?.user?.email && (
-                    <span> You are currently signed in as <strong>{session.user.email}</strong>.</span>
+                {/* @ts-ignore */}
+                {session?.user?.accessRequestStatus === 'approved' ? (
+                    <span>Your admin access has been approved. Please re-login to update your permissions.</span>
+                ) : (
+                    <>
+                        You do not have permission to view the Admin Dashboard. 
+                        {session?.user?.email && (
+                            <span> You are currently signed in as <strong>{session.user.email}</strong>.</span>
+                        )}
+                    </>
                 )}
             </p>
 
