@@ -14,7 +14,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import CertificateSection from '@/components/CertificateSection';
 
 type Props = {
-    params: { city: string };
+    params: Promise<{ city: string }>;
 };
 
 export async function generateStaticParams() {
@@ -24,7 +24,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const city = params.city;
+    const { city } = await params;
     const path = `/online-medical-certificate-in-${city}`;
     
     // Use getMetadata utility if it supports strict lookup (it does fallback)
@@ -39,8 +39,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default function OnlineMedicalCertificateCity({ params }: Props) {
-    const city = params.city;
+export default async function OnlineMedicalCertificateCity({ params }: Props) {
+    const { city } = await params;
     const formattedCity = city.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     const pageTitle = `Online Medical Certificate in ${formattedCity}`;
 
