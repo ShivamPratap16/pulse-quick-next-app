@@ -1,11 +1,10 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export default function Loader() {
     const pathname = usePathname();
-    const searchParams = useSearchParams();
     const [isLoading, setIsLoading] = useState(true);
     const [show, setShow] = useState(true);
 
@@ -21,7 +20,7 @@ export default function Loader() {
         }, 400); // Loader visible duration
 
         return () => clearTimeout(timeout);
-    }, [pathname, searchParams]);
+    }, [pathname]);
 
     if (!show) return null;
 
