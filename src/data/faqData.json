@@ -1,0 +1,343 @@
+
+{
+   "default": {
+      "meta": {
+         "title": "Frequently Asked Questions",
+         "subtitle": "COMMON QUERIES"
+      },
+      "faqs": [
+         {
+            "question": "What is a medical certificate?",
+            "answer": "A medical certificate is an document issued by a licensed doctor that verifies an individual's health condition. It typically includes details such as the docter recommendations, and the duration of any required leave from work or school."
+         },
+         {
+            "question": "How do I get a medical certificate online?",
+            "answer": "You can get a medical certificate online through PulseQuik by submitting the medical form and consulting a licensed doctor. Once your health details are reviewed, you will receive a digital copy of your certificate within 30-40 minutes."
+         },
+         {
+            "question": "Do I need a video consultation?",
+            "answer": "Not always. In most cases, your certificate will be issued based on the medical form and details you provide. However, in certain situations, such as fitness or specific health-related certificates, our doctor may require a short consultation before approval. The final decision for consultation and certificate issuance is made at the doctor’s discretion, in compliance with NMC and WHO telemedicine guidelines."
+         },
+         {
+            "question": "Which cities and states do pulsequik operate in?",
+            "answer": "We provide online medical certificates worldwide. No matter where you are, you can apply from the comfort of your home and receive a valid medical certificate digitally."
+         },
+         {
+            "question": "When will I receive my medical certificate?",
+            "answer": "You will receive your digital medical certificates within 30-40 minutes of submitting the medical form and hard copy within 3-4 working days."
+         },
+         {
+            "question": "Are these medical certificates genuine?",
+            "answer": "Yes. Every certificate from Pulsequik is genuine and doctor-certified, ensuring full compliance with medical protocols of the NMC & WHO and workplace standards. We do not provide or issue any fake medical certificate or report."
+         },
+         {
+            "question": "Can I get a backdated certificate?",
+            "answer": "In limited cases, yes. Pulsequik can provide backdated certificates if medically appropriate and legally permitted. All backdate request is carefully reviewed by our licensed doctor to ensure it meets compliance standards so that no fake or unlawful backdating is done."
+         },
+         {
+            "question": "How long does it take to get the certificate?",
+            "answer": "With Pulsequik, the entire process can be completed in as little as 30–45 minutes after submission."
+         },
+         {
+            "question": "Can another state Doctor issue me a medical certificate?",
+            "answer": "Definitely! Doctors registered under NMC or respective State Medical Councils are empowered to issue medical certificates. All certificates issued by Pulsequik are signed by registered/licensed doctors in accordance with NMC and WHO telemedicine guidelines, thereby staying valid and trusted in India as well as abroad."
+         },
+         {
+            "question": "Is my personal information secure?",
+            "answer": "Yes, absolutely. Pulsequik follows all data protection protocols and complies with HIPAA and GDPR guidelines. All your personal health data is encrypted, kept confidential, and never shared with any third parties."
+         },
+         {
+            "question": "Will my employer/education institute accept a certificate issued by Pulsequik?",
+            "answer": "In the majority of cases, Pulsequik certificates signed by doctors are accepted by employers and educational institutes, as they meet the criteria set by the NMC and telemedicine guidelines internationally. Another key factor is the certificate, which specifies the doctor's credentials and contact information for checking, ensuring full transparency and trust on their part."
+         },
+         {
+            "question": "How to make a medical certificate for college?",
+            "answer": "Getting a college medical certificate online is quick and hassle-free. Instead of visiting a clinic while unwell, students can simply apply through Pulsequik, share their health details, and consult with a licensed doctor online. Colleges usually ask for a medical certificate to verify health-related absences, and Pulsequik provides authentic, doctor-approved documents that meet these requirements."
+         },
+         {
+            "question": "What is the process to obtain a fitness medical certificate online?",
+            "answer": "You can receive a fitness certificate in just a few simple steps - You can receive a fitness certificate in just a few simple steps: - Complete our application form related to your required certificate. Consult with a licensed doctor to assess your fitness. If a specific certificate format is required, our doctors can guide you on any additional tests that may be needed to meet that requirement."
+         },
+         {
+            "question": "How to generate a medical certificate online?",
+            "answer": "Generating a medical certificate online is easy with Pulsequik. Simply fill out the medical form with your health details, and if necessary, have a quick consultation with a licensed doctor. Once your information is reviewed, you will receive a digital copy of your medical certificate within 30-40 minutes."
+         }
+      ]
+   },
+   "/medical-fitness-certificate": {
+      "meta": {
+         "title": "Frequently Asked Questions ad",
+         "subtitle": "COMMON QUERIES"
+      },
+      "faqs": [
+         {
+            "question": "What is a Medical Fitness Certificate used for?",
+            "answer": "A Medical Fitness Certificate proves that an individual is medically fit for employment, sports, driving, travel, education, or legal purposes."
+         },
+         {
+            "question": "Is an online Medical Fitness Certificate valid?",
+            "answer": "Yes! Pulsequik’s certificates are issued by licensed doctors and legally accepted by employers, travel authorities, and sports institutions."
+         },
+         {
+            "question": "Will my employer or sports authority accept my certificate?",
+            "answer": "In most cases, yes! Our Medical Fitness Certificates are issued by licensed medical professionals and are widely accepted by employers, sports bodies, and other institutions. However, acceptance ultimately depends on the specific policies of your organization."
+         },
+         {
+            "question": "How do I get a Medical Fitness Certificate online?",
+            "answer": "Simply fill out our online form with your health details. If needed, have a quick consultation with a licensed doctor. Once reviewed, you will receive your certificate digitally within 30-40 minutes."
+         },
+         {
+            "question": "Do I need a medical checkup for this certificate?",
+            "answer": "For most cases, a checkup is not required unless specifically requested for certain jobs or sports categories."
+         },
+         {
+            "question": "How quickly can I get a Medical Fitness Certificate?",
+            "answer": "You can receive your digital certificate within 30-45 minutes after submission. Physical copies are delivered within 3-4 days."
+         },
+         {
+            "question": "Do you provide fake medical fitness certificates?",
+            "answer": "No. At Pulsequik, we only issue genuine and legally valid medical fitness certificates from licensed doctors. Providing false medical documents is illegal, and we strictly follow all ethical medical practices."
+         },
+         {
+            "question": "What medical conditions qualify for a Medical Fitness Certificate?",
+            "answer": "Conditions like general good health, absence of contagious diseases, and no physical or mental impairments may qualify. A doctor will assess your case individually."
+         },
+         {
+            "question": "Will my Medical Fitness Certificate include a doctor’s signature and registration number?",
+            "answer": "Yes, all certificates are digitally signed by a licensed doctor with registration details."
+         },
+         {
+            "question": "Is my health information kept private?",
+            "answer": "Absolutely. With Pulsequik, all details you provide us are completely confidential and secured under HIPAA and telemedicine guidelines."
+         },
+         {
+            "question": "Can I request both digital and physical copies of my Medical Fitness Certificate?",
+            "answer": "Yes, you will receive a soft copy within 30-40 mins, and a hard copy can be couriered to your address within 3–4 working days if required."
+         },
+         {
+            "question": "Are your Medical Fitness Certificates valid outside India?",
+            "answer": "We issue certificates worldwide as per the telemedicine laws. If you are applying for an international job or sports activity, it’s best to confirm with the specific organization if they accept online medical certificates."
+         },
+         {
+            "question": "What details are included in a Medical Fitness Certificate?",
+            "answer": "Medical Fitness Certificates include Your name, recommended fitness status, doctor’s name, registration number, signature, and stamp/digital seal."
+         },
+         {
+            "question": "Can I use this certificate for a job application?",
+            "answer": "Absolutely, the Medical Fitness Certificate from Pulsequik is valid for government and private sector jobs."
+         }
+      ]
+   },
+   "/sick-leave-certificate": {
+      "meta": {
+         "title": "Frequently Asked Questions",
+         "subtitle": "COMMON QUERIES"
+      },
+      "faqs": [
+         {
+            "question": "Are Pulsequik sick leave certificates legally valid?",
+            "answer": "Absolutely! Our certificates are from licensed doctors are legally recognized and accepted by most employers, schools, universities, and organizations."
+         },
+         {
+            "question": "Will my employer or educational institution accept my certificate?",
+            "answer": "Yes! Our sick leave certificates are issued by licensed medical professionals and are widely accepted by employers, universities, and other institutions. However, acceptance ultimately depends on the specific policies of your organization."
+         },
+         {
+            "question": "Do you provide fake sick leave medical certificates?",
+            "answer": "No. At Pulsequik, we only issue genuine and legally valid sick leave certificates from licensed doctors. Providing false medical documents is illegal, and we strictly follow ethical medical practices."
+         },
+         {
+            "question": "Can I request a backdated sick leave certificate?",
+            "answer": "Yes, in eligible cases. Backdated certificates may be provided if your request is reasonable and medical assessment by a doctor."
+         },
+         {
+            "question": "How quickly will I receive my sick leave certificate?",
+            "answer": "With Pulsequik, typically your certificate digital copies will be delivered within 30–45 minutes after submission and physical copies are delivered within 3–4 days."
+         },
+         {
+            "question": "What are the medical conditions required for a sick leave certificate?",
+            "answer": "Following conditions such as flu, fever, infections, injuries, surgery recovery, migraines, or mental health issues may qualify. Also doctor will assess your situation individually."
+         },
+         {
+            "question": "Can I get a sick leave certificate without a video consultation?",
+            "answer": "No. To ensure authenticity and compliance with medical regulations it required consultation, every certificate is issued only after an online consultation with our licensed doctor."
+         },
+         {
+            "question": "Will my sick leave certificate include a doctor’s signature and registration number?",
+            "answer": "Absolutely. Each certificate we issue carries the doctor’s name, registration number, digital signature, and seal, making it verifiable and legally valid."
+         },
+         {
+            "question": "Can I extend my sick leave certificate if I’m still unwell?",
+            "answer": "Yes, if your condition persists, you can again fill out form and request an extension by undergoing a follow-up consultation."
+         },
+         {
+            "question": "Can international employers or institutes accept my certificate?",
+            "answer": "Pulsequik issue certificates worldwide as per the telemedicine laws. While many international employers accept them, you should confirm with your specific organization."
+         },
+         {
+            "question": "Is my health information confidential?",
+            "answer": "Absolutely. Your data is protected under telemedicine and HIPAA-compliant guidelines, ensuring full confidentiality."
+         },
+         {
+            "question": "What is the difference between a sick leave certificate and a fitness certificate?",
+            "answer": "A sick leave certificate declares you unfit to attend work or school, while a fitness certificate confirms you are medically fit/unfit to resume your duties."
+         },
+         {
+            "question": "What details are included in my sick leave certificate?",
+            "answer": "Your sick leave certificate typically includes your name, period of leave, medical justification (if required), doctor’s details, signature, and registration number."
+         },
+         {
+            "question": "Can HR or schools verify my certificate?",
+            "answer": "Yes. The certificate includes verifiable doctor details, and HR/schools can contact us for validation if needed."
+         }
+      ]
+   },
+   "/work-from-home-certificate": {
+      "meta": {
+         "title": "Frequently Asked Questions",
+         "subtitle": "COMMON QUERIES"
+      },
+      "faqs": [
+         {
+            "question": "Is a Work from Home Certificate legally valid?",
+            "answer": "Yes, Pulsequik certificates are issued by certified licensed doctors and accepted by most employers."
+         },
+         {
+            "question": "How do I get a Work from Home Certificate?",
+            "answer": "Simply fill out our online form with your health details. If needed, have a quick consultation with a licensed doctor. Once reviewed, you will receive your certificate digitally within 30-40 minutes."
+         },
+         {
+            "question": "Can I use this certificate for a long-term work-from-home request?",
+            "answer": "Yes! If your medical condition requires long-term remote work, your certificate will indicate the necessary duration."
+         },
+         {
+            "question": "Will my employer or organization accept my Work from Home Certificate in India?",
+            "answer": "Online medical certificates issued by licensed doctors in line with the Telemedicine Practice Guidelines (2020) under the National Medical Commission. This makes all medical certificates legally valid across India and worldwide. In most cases, employers and organizations recognize them as authentic. However, final acceptance can depend on your organization’s internal HR or academic policy, so it’s always advisable to confirm with them."
+         },
+         {
+            "question": "Do you provide fake work-from-home medical certificates?",
+            "answer": "No. At Pulsequik, we only issue genuine and legally valid work from certificates from licensed doctors. Providing fake medical documents is illegal, and we strictly follow all ethical medical practices."
+         },
+         {
+            "question": "What is a Work From Home Medical Certificate used for?",
+            "answer": "A Work From Home Medical Certificate issued by a licensed doctor proves that an individual is medically unfit to attend the workplace physically but is still capable of performing their duties remotely from home."
+         },
+         {
+            "question": "How long does it take to get the work-from-home certificate?",
+            "answer": "You can receive your work-from-home certificate in 30–45 minutes after submission. And physical copies are delivered within 3–4 days."
+         },
+         {
+            "question": "What medical conditions qualify for a Work from Home Certificate?",
+            "answer": "Conditions like back pain, chronic illness, post-surgery recovery, pregnancy, or mental health concerns may qualify. A doctor will review your case individually."
+         },
+         {
+            "question": "Will my Work from Home Certificate include a doctor’s signature and stamp?",
+            "answer": "Yes, all certificates are digitally signed by a licensed doctor with registration details."
+         },
+         {
+            "question": "Is my health information kept private?",
+            "answer": "Absolutely. With Pulsequik, all details you provide us are completely confidential and secured under HIPAA and telemedicine guidelines."
+         },
+         {
+            "question": "Is Pulsequik offer custom format medical certificate?",
+            "answer": "Yes, Pulsequik offer custom format medical certificate also if your HR requires a specific format, you can share it with us, and our doctors will provide the certificate accordingly."
+         },
+         {
+            "question": "Do I need to visit a hospital for verification?",
+            "answer": "Not it all, all our process is done through online consultation."
+         },
+         {
+            "question": "Can I renew or extend my Work from Home Certificate?",
+            "answer": "Yes, if your condition not improve, you can request a renewal of your work-from-home certificate with updated medical details by filling our form again."
+         },
+         {
+            "question": "Do all employers accept online Work from Home Certificates?",
+            "answer": "Yes, most employers recognize licensed doctor issued certificates. However, it’s always good to check with your company’s HR policy."
+         },
+         {
+            "question": "Can I use a Work from Home Certificate for government or PSU jobs?",
+            "answer": "Absolutely. Since all our medical certificates are issued in compliance with the Telemedicine Practice Guidelines (2020), they are valid across India. Still, government and PSU organizations may have stricter HR protocols, so always confirm in advance."
+         },
+         {
+            "question": "What if my HR doubts the authenticity of the certificate?",
+            "answer": "Each certificate contains a doctor’s registration number and digital signature. Your HR can verify the authenticity by contacting us directly or checking the doctor’s details with the National Medical Commission."
+         },
+         {
+            "question": "Do you issue Work from Home Certificates for mental health conditions?",
+            "answer": "Yes. Mental health concerns such as anxiety, stress, or depression can qualify for a Work from Home Certificate after evaluation by our licensed doctor."
+         },
+         {
+            "question": "Can I get both digital and physical copies of the certificate?",
+            "answer": "Yes, you will receive a soft copy within 30-40 mins, and a hard copy can be couriered to your address within 3–4 working days if required."
+         },
+         {
+            "question": "Are your Work from Home Certificates valid outside India?",
+            "answer": "We issue certificates worldwide as per the telemedicine laws. If you are working for an international employer, it’s best to confirm with your HR if they accept online medical certificates."
+         },
+         {
+            "question": "Is there a difference between a Sick Leave Certificate and a Work from Home Certificate?",
+            "answer": "Absolutely. A Sick Leave Certificate states that you are unfit to work completely, while a work-from-home certificate confirms you are unfit to attend the office in person but can continue duties remotely"
+         },
+         {
+            "question": "What details are included in a Work from Home Certificate?",
+            "answer": "Work from Home Certificate include Your name, recommended work-from-home duration, doctor’s name, registration number, signature, and stamp/digital seal."
+         }
+      ]
+   },
+   "/recovery-certificate": {
+      "meta": {
+         "title": "Frequently Asked Questions",
+         "subtitle": "COMMON QUERIES"
+      },
+      "faqs": [
+         {
+            "question": "Is a Recovery Certificate legally valid?",
+            "answer": "Yes, Pulsequik Recovery Certificates are issued by licensed doctors and are 100% valid for use."
+         },
+         {
+            "question": "Can I use this certificate for international travel?",
+            "answer": "Yes! Airlines often require Recovery Certificates for travel clearance, especially after COVID-19 or other infections."
+         },
+         {
+            "question": "Do employers accept online Recovery Certificates?",
+            "answer": "Most employers accept doctor-issued certificates for returning to work after medical leave."
+         },
+         {
+            "question": "What is a Recovery Medical Certificate used for?",
+            "answer": "A Recovery Certificate proves that you are fully recovered from an illness. disease or infection and are now fit to return to work, and other normal activities."
+         },
+         {
+            "question": "Which illnesses qualify for a Recovery Certificate?",
+            "answer": "Following common conditions include influenza, respiratory infections, injuries, COVID-19, or post-surgery recovery. Our licensed doctor will assess your eligibility to issue the Recovery Medical Certificate."
+         },
+         {
+            "question": "How soon can I get a Recovery Certificate after illness?",
+            "answer": "You can apply as soon as your doctor verifies you are fit/unfit. We issue certificates usually within 30–45 minutes after submitting our form."
+         },
+         {
+            "question": "Will my Recovery Certificate include a doctor’s signature and registration number?",
+            "answer": "Yes. Each and every Recovery Certificate we issue is signed by our licensed doctor with their registration number for verification."
+         },
+         {
+            "question": "Is my Recovery Certificate accepted by airlines, schools, institute or sports authorities?",
+            "answer": "Yes. Most organizations, schools, institute, airlines, or sports authorities recognize doctor-issued certificates. However, some may require a specific format, which we can customize upon request."
+         },
+         {
+            "question": "Is my health information kept private?",
+            "answer": "Absolutely. All medical records are confidential and protected under HIPAA and telemedicine guidelines."
+         },
+         {
+            "question": "Can I request both digital and physical copies of my Recovery Certificate?",
+            "answer": "Yes. You will receive a soft copy within 30-45 mins, and a hard copy can be couriered within 3–4 working days if needed."
+         },
+         {
+            "question": "Can I use a Recovery Certificate instead of a Fitness Certificate?",
+            "answer": "No, both are different. As a Recovery Certificate use to submit as a proof of regained health and resume job after leave, and Fitness Certificate is use for joining, admission or any sports activity."
+         },
+         {
+            "question": "What details are included in a Recovery Certificate?",
+            "answer": "A Recovery Medical Certificate included Your name, date of recovery, medical confirmation from a licensed doctor, recommended clearance for activities, and doctor’s signature with registration number."
+         }
+      ]
+   }
+}

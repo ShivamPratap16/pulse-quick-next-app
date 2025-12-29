@@ -1,0 +1,17 @@
+/* Global link underline overrides - keep underline only on hover */
+
+/* Base and interaction states */
+a, a:active, a:focus { text-decoration: none !important; }
+a:hover { text-decoration: underline !important; }
+
+/* Ensure nav links follow the same rule */
+.navbar a, .nav a, .nav-link { text-decoration: none !important; }
+.navbar a:hover, .nav a:hover, .nav-link:hover { text-decoration: underline !important; }
+
+/* Buttons styled as links should not underline by default */
+.btn-link { text-decoration: none !important; }
+.btn-link:hover { text-decoration: underline !important; }
+
+/* Override Bootstrap utility if present anywhere */
+a.text-decoration-underline, .text-decoration-underline { text-decoration: none !important; }
+.text-decoration-underline:hover { text-decoration: underline !important; }

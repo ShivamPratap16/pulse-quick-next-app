@@ -9,9 +9,22 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@sanity/icons": "^3.7.4",
+    "@sanity/image-url": "^2.0.2",
+    "@sanity/ui": "^3.1.11",
+    "@sanity/vision": "^5.0.1",
+    "bootstrap": "^5.3.8",
+    "lucide-react": "^0.562.0",
     "next": "16.0.10",
-    "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "next-auth": "^4.24.13",
+    "next-sanity": "^12.0.5",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "sanity": "^5.0.1",
+    "sass": "^1.97.0",
+    "styled-components": "^6.1.19",
+    "swiper": "^12.0.3",
+    "web-vitals": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,0 +1,100 @@
+/* Process (pwproc-) — Single responsive layout, mobile-first */
+/* Base styles */
+.pwproc-bg{background:#f4f6f9;padding:60px 0}
+.pwproc-section{position:relative;overflow:hidden;min-height:500px}
+.pwproc-section-header{margin-bottom:60px}
+.pwproc-subtitle{font-size:16px;font-weight:600;color:var(--primary-color,#007bff);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:inline-block}
+.pwproc-title{font-size:32px;font-weight:700;line-height:1.2;margin:0;color:var(--heading-color,#333)}
+
+/* Container - Mobile: Timeline, Tablet/Desktop: Grid */
+.pwproc-container{position:relative;max-width:700px;margin:0 auto;padding:0 20px}
+
+/* Process Item */
+.pwproc-item{position:relative;margin-bottom:40px}
+
+/* Mobile Timeline Line */
+.pwproc-item::before{content:"";position:absolute;top:24px;left:34px;height:100%;width:2px;border:1px dashed var(--primary-color,#007bff);z-index:1}
+.pwproc-item:last-child::before{display:none}
+
+/* Mobile Timeline Number */
+.pwproc-mobile-number{position:absolute;left:10px;top:0;width:48px;height:48px;line-height:48px;text-align:center;border-radius:50%;background:var(--primary-color,#007bff);color:#fff;font-weight:600;border:4px solid #f8f9fa;z-index:2}
+
+/* Card */
+.pwproc-card{padding-left:75px;min-height:80px}
+
+/* Media Container */
+.pwproc-media{position:relative;margin-bottom:20px;display:inline-block}
+
+/* Image Wrapper */
+.pwproc-img-wrapper{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.05);aspect-ratio:1/1}
+
+/* Images - Show/Hide based on breakpoint */
+.pwproc-img-mobile{display:block;width:60px!important;height:60px!important;object-fit:contain}
+.pwproc-img-desktop{display:none}
+
+/* Desktop/Tablet Number (hidden on mobile) */
+.pwproc-number{display:none}
+
+/* Info */
+.pwproc-info{text-align:left}
+.pwproc-card-title{font-size:20px;font-weight:600;margin-bottom:8px;color:var(--heading-color,#333)}
+.pwproc-desc p{margin:0;color:#6c757d;line-height:1.5;font-size:14px}
+
+/* ======================================== 
+TABLET: 769px - 1024px (2x2 Grid)
+======================================== */
+@media (min-width:769px){
+  .pwproc-bg{padding:90px 0}
+  .pwproc-title{font-size:40px}
+  .pwproc-container{max-width:100%;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+  
+  /* Remove timeline elements */
+  .pwproc-item::before{display:none}
+  .pwproc-mobile-number{display:none}
+  
+  /* Adjust card */
+  .pwproc-card{padding:25px 15px;text-align:center}
+  
+  /* Show desktop images, hide mobile */
+  .pwproc-img-wrapper{width:100px;height:100px;margin:0 auto;border-radius:20%;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+  .pwproc-img-mobile{display:none}
+  .pwproc-img-desktop{display:block;width:100px!important;height:100px!important;border-radius:20%}
+  
+  /* Show number badge */
+  .pwproc-number{display:block;position:absolute;top:-10px;left:-20px;border-radius:50%;background:var(--primary-color,#007bff);font-size:14px;color:#fff;height:40px;width:40px;text-align:center;line-height:40px;font-weight:600;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+  
+  .pwproc-info{text-align:center}
+}
+
+/* ======================================== 
+DESKTOP: 1025px+ (1x4 Grid)
+======================================== */
+@media (min-width:1025px){
+  .pwproc-title{font-size:48px}
+  .pwproc-container{grid-template-columns:repeat(4,1fr)}
+  
+  /* Larger images */
+  .pwproc-img-wrapper{width:150px;height:150px}
+  .pwproc-img-desktop{width:150px!important;height:150px!important}
+  
+  /* Larger number badge */
+  .pwproc-number{top:-10px;left:-10px;height:48px;width:48px;line-height:48px;font-size:16px;border:4px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+  
+  /* Adjust card */
+  .pwproc-card{padding:30px}
+  .pwproc-card-title{font-size:24px}
+  .pwproc-desc p{font-size:15px;line-height:1.6}
+}
+
+/* Background image for large screens */
+@media (min-width:1200px){
+  .pwproc-section{background:url(/assets/images/process/bg.webp) center center/auto no-repeat #f4f6f9}
+}
+
+/* Small mobile optimizations */
+@media (max-width:480px){
+  .pwproc-bg{padding:60px 0}
+  .pwproc-title{font-size:28px}
+  .pwproc-container{padding:0 15px}
+  .pwproc-card-title{font-size:18px}
+}
