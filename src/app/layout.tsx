@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import { Geist, Geist_Mono, Merriweather, Poppins } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
@@ -61,7 +62,9 @@ export default function RootLayout({
         <GoogleAnalytics />
         <SchemaOrg />
         <WebVitals />
-        <Loader />
+        <React.Suspense fallback={null}>
+            <Loader />
+        </React.Suspense>
         <StyledComponentsRegistry>
             <Providers>
                 <LayoutWrapper>{children}</LayoutWrapper>

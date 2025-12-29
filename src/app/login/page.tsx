@@ -41,7 +41,9 @@ export default function LoginPage() {
       </div>
 
       {/* Login Overlay */}
-      <LoginOverlay />
+      <React.Suspense fallback={<div>Loading...</div>}>
+          <LoginOverlay />
+      </React.Suspense>
     </>
   );
 }
