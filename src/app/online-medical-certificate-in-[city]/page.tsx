@@ -1,6 +1,7 @@
 
 import React from 'react';
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import Breadcrumb from '@/components/Breadcrumb';
 import Click2Action from '@/components/Click2Action';
 import ProcessTow from '@/components/ProcessTow';
@@ -25,6 +26,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { city } = await params;
+    if (!city) return { title: 'Page Not Found' };
+
     const path = `/online-medical-certificate-in-${city}`;
     
     // Use getMetadata utility if it supports strict lookup (it does fallback)
@@ -41,6 +44,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function OnlineMedicalCertificateCity({ params }: Props) {
     const { city } = await params;
+    if (!city) return notFound();
+    
     const formattedCity = city.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     const pageTitle = `Online Medical Certificate in ${formattedCity}`;
 
