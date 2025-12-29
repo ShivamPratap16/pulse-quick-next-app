@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import CertificateButton from "./CertificateButton";
@@ -11,18 +11,35 @@ export default function Header() {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
+    const navRef = useRef<HTMLDivElement>(null);
 
     const toggleNavbar = () => {
         setIsMobileNavOpen(!isMobileNavOpen);
     };
 
-    // Close nav on click outside or scroll (simplified port from Vue)
+    const closeMenu = () => {
+        setIsMobileNavOpen(false);
+    };
+
+    // Close nav on click outside
     useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (navRef.current && !navRef.current.contains(event.target as Node)) {
+                setIsMobileNavOpen(false);
+            }
+        };
+
         const handleScroll = () => {
             if (isMobileNavOpen) setIsMobileNavOpen(false);
         };
+
+        document.addEventListener("mousedown", handleClickOutside);
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+            window.removeEventListener("scroll", handleScroll);
+        };
     }, [isMobileNavOpen]);
 
     // Smart Navbar Logic
@@ -30,23 +47,16 @@ export default function Header() {
         const controlNavbar = () => {
             if (typeof window !== 'undefined') {
                 if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                    // if scroll down hide the navbar (slide out)
                     setIsVisible(false);
                 } else {
-                    // if scroll up (or at top) show the navbar (slide in)
                     setIsVisible(true);
                 }
-
-                // remember current page location to use in the next move
                 setLastScrollY(window.scrollY);
             }
         };
 
         window.addEventListener('scroll', controlNavbar);
-
-        return () => {
-            window.removeEventListener('scroll', controlNavbar);
-        };
+        return () => window.removeEventListener('scroll', controlNavbar);
     }, [lastScrollY]);
 
     return (
@@ -98,13 +108,14 @@ export default function Header() {
                 </div>
             </div>
             <div 
+                ref={navRef}
                 className={`pq-bottom-header pq-has-sticky sticky-nav-animated ${isVisible ? 'nav-visible' : 'nav-hidden'}`}
             >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <nav className="navbar navbar-expand-lg navbar-light">
-                                <Link className="navbar-brand" href="/">
+                                <Link className="navbar-brand" href="/" onClick={closeMenu}>
                                     <Image
                                         src="/assets/images/logo/main-small.webp"
                                         alt="PulseQuik"
@@ -118,27 +129,27 @@ export default function Header() {
                                 <div className={`collapse navbar-collapse ${isMobileNavOpen ? 'show' : ''}`} id="navbarSupportedContent">
                                     <div id="pq-menu-contain" className="pq-menu-contain">
                                         <ul id="pq-main-menu" className="navbar-nav ml-auto">
-                                            <li className="menu-item"><Link href="/">Home</Link></li>
-                                            <li className="menu-item"><Link href="/medical-certificates">Medical Certificates</Link></li>
-                                            <li className="menu-item"><Link href="/international-medical-certificate">International Certificate</Link></li>
+                                            <li className="menu-item"><Link href="/" onClick={closeMenu}>Home</Link></li>
+                                            <li className="menu-item"><Link href="/medical-certificates" onClick={closeMenu}>Medical Certificates</Link></li>
+                                            <li className="menu-item"><Link href="/international-medical-certificate" onClick={closeMenu}>International Certificate</Link></li>
                                             <li className="menu-item">
-                                                <a href="#">Services</a><i className="fa fa-chevron-down pq-submenu-icon"></i>
+                                                <a href="#" onClick={(e) => e.preventDefault()}>Services</a><i className="fa fa-chevron-down pq-submenu-icon"></i>
                                                 <ul className="sub-menu">
-                                                    <li className="menu-item"><Link href="/sick-leave-certificate/">Sick Leave Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/work-from-home-certificate/">WFH Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/recovery-certificate/">Recovery Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/medical-fitness-certificate/">Medical Fitness Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/form-1a-fitness-certificate/">Form 1A Fitness Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/cara-fitness-certificate/">Cara Fitness Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/unfit-to-travel-certificate/">Unfit To Travel Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/fit-to-fly-certificate/">Fit To Travel/Fly Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/caretaker-certificate/">Caretaker Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/sports-medical-certificate/">Sports Medical Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/sick-leave-certificate/" onClick={closeMenu}>Sick Leave Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/work-from-home-certificate/" onClick={closeMenu}>WFH Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/recovery-certificate/" onClick={closeMenu}>Recovery Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/medical-fitness-certificate/" onClick={closeMenu}>Medical Fitness Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/form-1a-fitness-certificate/" onClick={closeMenu}>Form 1A Fitness Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/cara-fitness-certificate/" onClick={closeMenu}>Cara Fitness Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/unfit-to-travel-certificate/" onClick={closeMenu}>Unfit To Travel Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/fit-to-fly-certificate/" onClick={closeMenu}>Fit To Travel/Fly Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/caretaker-certificate/" onClick={closeMenu}>Caretaker Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/sports-medical-certificate/" onClick={closeMenu}>Sports Medical Certificate</Link></li>
                                                 </ul>
                                             </li>
-                                            <li className="menu-item"><Link href="/about-us">About Us</Link></li>
-                                            <li className="menu-item"><Link href="/blog">Blog</Link></li>
-                                            <li className="menu-item"><Link href="/contact-us">Contact Us</Link></li>
+                                            <li className="menu-item"><Link href="/about-us" onClick={closeMenu}>About Us</Link></li>
+                                            <li className="menu-item"><Link href="/blog" onClick={closeMenu}>Blog</Link></li>
+                                            <li className="menu-item"><Link href="/contact-us" onClick={closeMenu}>Contact Us</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -160,7 +171,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-
 
         </header>
     );

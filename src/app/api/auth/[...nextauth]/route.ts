@@ -51,7 +51,14 @@ export const authOptions: NextAuthOptions = {
                 if (sanityUser) {
                     token.id = sanityUser._id; // Sync Sanity ID
                     token.role = sanityUser.role;
-                    token.accessRequestStatus = sanityUser.accessRequestStatus;
+                    
+                    // Sanity Check: If role is 'user', they cannot be 'approved' for admin access.
+                    // This fixes the "Infinite Approval Loop" if data gets out of sync.
+                    if (sanityUser.role === 'user' && sanityUser.accessRequestStatus === 'approved') {
+                        token.accessRequestStatus = null; 
+                    } else {
+                        token.accessRequestStatus = sanityUser.accessRequestStatus;
+                    }
                 }
             } catch (error) {
                  console.error("Sanity JWT Error:", error);

@@ -20,11 +20,7 @@ export default function RequestAdminAccess() {
     }
 
     if (status === 'approved') {
-         return (
-             <div style={{ marginTop: '20px', padding: '16px', background: '#dcfce7', color: '#166534', borderRadius: '8px' }}>
-                 <strong>Access Approved!</strong> Please sign out and sign in again to access the dashboard.
-             </div>
-         )
+         return null; // Parent page handles "Role Updated" message
     }
 
     if (status === 'pending') {
