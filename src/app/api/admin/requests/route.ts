@@ -54,6 +54,12 @@ export async function PATCH(req: Request) {
                 return NextResponse.json({ error: 'Invalid role' }, { status: 400 })
             }
             updates.role = role
+            
+            // If demoting to 'user', clear the approval status so they don't see "Access Approved"
+            if (role === 'user') {
+                updates.accessRequestStatus = null
+            }
+
             logAction = 'Role Update'
             logDetails = `Updated role to ${role} for user ${targetEmail}`
         } else {
