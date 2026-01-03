@@ -14,13 +14,43 @@ body {
   overflow-x: hidden;
 }
 
+/* CONTENT ALIGNMENT - Ensure all text elements align consistently */
+.col-12 h1, .col-12 h2, .col-12 h3, .col-12 h4, .col-12 h5, .col-12 h6,
+.col-12 p,
+.col-md-12 h1, .col-md-12 h2, .col-md-12 h3, .col-md-12 h4, .col-md-12 h5, .col-md-12 h6,
+.col-md-12 p {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Override external text-container padding that causes 80px indentation */
+.text-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* 2. HEADER & NAVBAR - MOBILE FIRST */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15px;
+    padding: 10px 15px; /* Match container padding for alignment */
     width: 100%;
+}
+
+/* Navigation Menu Item Spacing - Override external theme CSS */
+header#pq-header .pq-bottom-header .navbar .navbar-nav#pq-main-menu > li.menu-item {
+    margin-right: 25px !important;
+}
+
+header#pq-header .pq-bottom-header .navbar .navbar-nav#pq-main-menu > li.menu-item:last-child {
+    margin-right: 0 !important;
+}
+
+/* Reduce left/right spacing by increasing container width */
+header#pq-header .container {
+    max-width: 95% !important;
 }
 
 /* Force hide the header button on mobile/tablet until Desktop Mode (1023px) */
@@ -164,14 +194,7 @@ body {
         align-items: center !important;
     }
 
-    /* 8. Container Width */
-    .container, .pq-container {
-        width: 100% !important;
-        max-width: 1320px !important;
-        margin: 0 auto !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
+
 }
 
 /* 4. COMPACT OVERRIDES (1023px - 1199px) - Mini Desktop Mode */
@@ -249,6 +272,15 @@ body {
     margin: 0 5px;
 }
 
+/* GLOBAL CONTAINER ALIGNMENT (Fix for 767px-1364px range) */
+.container, .pq-container {
+    width: 100% !important;
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
 /* Remove Underlines */
 #pq-main-menu .menu-item a {
     text-decoration: none !important;
@@ -293,8 +325,26 @@ body {
   padding: 90px 0;
 }
 
+/* Responsive padding adjustments for consistent spacing */
+@media (max-width: 1199px) {
+  .pq-90 {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pq-90 {
+    padding: 40px 0;
+  }
+}
+
 .pq-pb-140 {
   padding-bottom: 140px;
+}
+
+
+ul.custom-list {
+    padding-left: 20px;
 }
 
 ul.custom-list li {
@@ -323,6 +373,85 @@ ul.custom-list li {
 
 ul.custom-list li span {
   font-weight: 500;
+}
+
+/* Hero Banner - Home Page (left-aligned as original) */
+/* No centering applied - keeping original layout */
+
+/* Fix breadcrumb and main content width on all screens */
+.pq-breadcrumb-section .container {
+    width: 100% !important;
+    max-width: 1320px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin: 0 auto !important;
+}
+
+.pq-breadcrumb-section .row {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Additional breadcrumb padding override */
+.pq-breadcrumb,
+.pq-breadcrumb ul,
+.pq-breadcrumb-section .pq-breadcrumb {
+    padding-left: 15px !important;
+}
+
+.pq-breadcrumb-section .col-12,
+.pq-breadcrumb-section .col-md-12 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
+/* Ensure main content sections take full width with proper padding */
+section.pq-90 .container {
+    width: 100% !important;
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+section .row {
+    width: 100% !important;
+}
+
+section .col-12,
+section .col-md-12 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+}
+
+/* Service Pages - Click2Action Blue Banner Vertical Centering */
+section.contact-us.pq-bg-primary-dark .row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 200px !important;
+}
+
+section.contact-us.pq-bg-primary-dark .pq-title,
+section.contact-us.pq-bg-primary-dark h1 {
+    text-align: center !important;
+    margin: 0 auto !important;
+    /* Responsive font sizing */
+    font-size: clamp(24px, 3.5vw, 48px) !important;
+}
+
+section.contact-us.pq-bg-primary-dark .col-xl-8,
+section.contact-us.pq-bg-primary-dark .col-xl-4 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+section.contact-us.pq-bg-primary-dark .pq-button {
+    /* Responsive button sizing */
+    font-size: clamp(12px, 1.5vw, 16px) !important;
 }
 
 .pq-breadcrumb-section {

@@ -34,14 +34,10 @@ export default function RecoveryCertificate() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">How to Obtain a Medical Recovery Certificate Online Through Pulsequik's Simple Process</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mb-3 mt-4">
+                            <h2 className="pb-2">Recovery Certificate – Get Your Medical Recovery Certificate Online with Pulsequik</h2>
                             <p>
-                                Recovering from any illness, surgery, or other medical condition is an important milestone. A Recovery Certificate is a document that confirms that you are fit and healthy again, allowing you to return to work, travel, or resume other normal activities. Whether it’s for employment after illness or for financial restoration, these certificates play a critical role in various sectors. With Pulsequik, you can obtain your Recovery Certificate online efficiently.
+                                Recovering from any illness, surgery, or other medical condition is an important milestone. A Recovery Certificate is a document that confirms that you are fit and healthy again, allowing you to return to work, travel, or resume other normal activities. Whether it's for employment after illness or for financial restoration, these certificates play a critical role in various sectors. With Pulsequik, you can obtain your Recovery Certificate online efficiently.
                             </p>
 
                             <h2>What is a Recovery Certificate?</h2>
@@ -51,11 +47,13 @@ export default function RecoveryCertificate() {
 
                             <h3>Key Information in a Recovery Certificate:</h3>
                             <ul className="custom-list">
-                                <li>Patient’s Name & Relevant Health Information</li>
-                                <li>Doctor’s Confirmation of Recovery</li>
-                                <li>Recovery Date & Current Health Status</li>
-                                <li>Doctor’s Signature & Registration Number</li>
+                                <li>Patient's Name & Relevant Health Information</li>
+                                <li>Doctor's Confirmation of Recovery</li>
+                                <li>Date of Recovery</li>
+                                <li>Doctor's Signature & Stamp</li>
                             </ul>
+                        </div>
+                        <div className="col-12">
                             <p>
                                 This certificate is often required for work rejoining, travel approval, fitness resumption, and medical record maintenance.
                             </p>

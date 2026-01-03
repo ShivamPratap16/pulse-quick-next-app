@@ -47,48 +47,40 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="row pt-2">
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h4>Our Mission</h4>
-                            </div>
+                        <div className="col-12">
+                            <h4 className="pb-2">Our Mission</h4>
+                            <p>
+                                Our mission is to make healthcare accessible to everyone, regardless of location or circumstance. By
+                                leveraging technology, we aim to simplify the process of obtaining medical consultations and
+                                certifications, ensuring timely and efficient care for all.
+                            </p>
                         </div>
-                        <p>
-                            Our mission is to make healthcare accessible to everyone, regardless of location or circumstance. By
-                            leveraging technology, we aim to simplify the process of obtaining medical consultations and
-                            certifications, ensuring timely and efficient care for all.
-                        </p>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h4>Our Vision</h4>
-                            </div>
-                        </div>
-                        <p>
-                            We envision a future where quality healthcare is just a click away for everyone. By continuously innovating and expanding our services, we strive to bridge the gap between patients and healthcare providers, making virtual healthcare the norm.
-                        </p>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h4>Core Values</h4>
-                            </div>
-                        </div>
-                        <p>
-                            <span>Accessibility:</span> We are committed to breaking down barriers to healthcare access,
-                            providing services that are available to anyone, anywhere.<br /><br />
 
-                            <span>Trust:</span> We prioritize the safety and confidentiality of our patients, maintaining
-                            the highest standards of integrity and professionalism.<br /><br />
-
-                            <span>Innovation:</span> Embracing the latest technological advancements, we continuously
-                            improve our platform to meet the evolving needs of our users.<br /><br />
-
-                            <span>Compassion:</span> We believe in compassionate care, ensuring that every patient feels
-                            heard, understood, and valued.
-                        </p>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h4>Key Offerings</h4>
-                            </div>
+                        <div className="col-12 mt-4">
+                            <h4 className="pb-2">Our Vision</h4>
+                            <p>
+                                We envision a future where quality healthcare is just a click away for everyone. By continuously innovating and expanding our services, we strive to bridge the gap between patients and healthcare providers, making virtual healthcare the norm.
+                            </p>
                         </div>
-                        <p>
+
+                        <div className="col-12 mt-4">
+                            <h4 className="pb-2">Core Values</h4>
+                            <p>
+                                <span>Accessibility:</span> We are committed to breaking down barriers to healthcare access,
+                                providing services that are available to anyone, anywhere.<br /><br />
+
+                                <span>Trust:</span> We prioritize the safety and confidentiality of our patients, maintaining
+                                the highest standards of integrity and professionalism.<br /><br />
+
+                                <span>Innovation:</span> Embracing the latest technological advancements, we continuously
+                                improve our platform to meet the evolving needs of our users.<br /><br />
+
+                                <span>Compassion:</span> We believe in compassionate care, ensuring that every patient feels
+                                heard, understood, and valued.
+                            </p>
+                        </div>
+                        <div className="col-12 mt-4">
+                            <h4 className="pb-2">Key Offerings</h4>
                             <span>Online Medical Certificates:</span> PulseQuik provides <strong>doctor-certified</strong> medical certificates
                             issued by certified doctors, simplifying the process for patients who need documentation for work, school, or personal reasons.<br /><br />
 
@@ -103,13 +95,10 @@ export default function AboutUs() {
 
                             <span>Secure and Confidential:</span> We employ advanced security measures to protect patient
                             data, ensuring that all interactions and records are kept confidential.<br /><br />
-                        </p>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h4>Achievements</h4>
-                            </div>
                         </div>
-                        <p>
+
+                        <div className="col-12 mt-4">
+                            <h4 className="pb-2">Achievements</h4>
                             <span>Innovative Healthcare Solution:</span> Recognized as a game-changer in the telemedicine
                             industry, PulseQuik has quickly gained a reputation for its unique offering of online medical certificates.<br /><br />
 
@@ -118,16 +107,15 @@ export default function AboutUs() {
 
                             <span>Positive Impact:</span> Our services have made a significant impact on patient lives,
                             reducing the need for physical visits to healthcare facilities and providing timely medical support.
-                        </p>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h4>Join Us</h4>
-                            </div>
                         </div>
-                        <p>
-                            At PulseQuik, we are always looking for passionate individuals who are eager to contribute to the
-                            future of healthcare. If you are interested in joining a dynamic and innovative team, visit our careers page to explore current opportunities.
-                        </p>
+
+                        <div className="col-12 mt-4">
+                            <h4 className="pb-2">Join Us</h4>
+                            <p>
+                                At PulseQuik, we are always looking for passionate individuals who are eager to contribute to the
+                                future of healthcare. If you are interested in joining a dynamic and innovative team, visit our careers page to explore current opportunities.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

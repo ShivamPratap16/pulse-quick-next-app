@@ -33,135 +33,153 @@ export default function SportsMedicalCertificate() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2>How to Get a Sports Medical Certificate Online with PulseQuik – Fast, Custom & Trusted</h2>
-                            </div>
+                        <div className="col-12 mb-3 mt-4">
+                            <h2 className="pb-2">Sports Medical Certificate: Fast, Custom & Trusted</h2>
                         </div>
 
-                        <h2>What is a Sports Medical Certificate and Why is it Important?</h2>
-                        <p>
-                            A sports medical certificate is an document confirming that you&apos;re physically fit to engage
-                            in sports or physical activities. It ensures safety during participation and is often mandatory for
-                            schools, colleges, clubs, marathons, and professional events.
-                        </p>
-                        <p>
-                            Whether you’re training for an Ironman or joining a local football team, PulseQuik helps you get
-                            this certificate quickly, easily, and in full compliance with medical regulations.
-                        </p>
+                        <div className="col-12 mt-4">
+                            <h2>What is a Sports Medical Certificate and Why is it Important?</h2>
+                            <p>
+                                A sports medical certificate is an document confirming that you&apos;re physically fit to engage
+                                in sports or physical activities. It ensures safety during participation and is often mandatory for
+                                schools, colleges, clubs, marathons, and professional events.
+                            </p>
+                            <p>
+                                Whether you’re training for an Ironman or joining a local football team, PulseQuik helps you get
+                                this certificate quickly, easily, and in full compliance with medical regulations.
+                            </p>
+                        </div>
 
-                        <h2>Who Needs a Sports Fitness Medical Certificate?</h2>
-                        <ul className="custom-list">
-                            <li>Athletes & Sports Enthusiasts</li>
-                            <li>School & College Students</li>
-                            <li>Event Participants (Ironman, cycling, swimming, etc.)</li>
-                            <li>Recreational Gym-goers</li>
-                            <li>Immigration or Visa Applicants (fitness proof)</li>
-                        </ul>
+                        <div className="col-12 mt-4">
+                            <h2>Who Needs a Sports Fitness Medical Certificate?</h2>
+                            <ul className="custom-list">
+                                <li>Athletes & Sports Enthusiasts</li>
+                                <li>School & College Students</li>
+                                <li>Event Participants (Ironman, cycling, swimming, etc.)</li>
+                                <li>Recreational Gym-goers</li>
+                                <li>Immigration or Visa Applicants (fitness proof)</li>
+                            </ul>
+                        </div>
 
-                        <h2>Events and Activities That Require One</h2>
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th>Activity/Sport</th>
-                                    <th>Require</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Marathons & Triathlons</td>
-                                    <td>Yes</td>
-                                </tr>
-                                <tr>
-                                    <td>School/College Sports</td>
-                                    <td>Yes</td>
-                                </tr>
-                                <tr>
-                                    <td>International Competitions</td>
-                                    <td>Yes</td>
-                                </tr>
-                                <tr>
-                                    <td>Military/Police Exams</td>
-                                    <td>Yes</td>
-                                </tr>
-                                <tr>
-                                    <td>Recreational Clubs</td>
-                                    <td>Sometimes</td>
-                                </tr>
-                                <tr>
-                                    <td>Gym Memberships</td>
-                                    <td>Sometimes</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div className="col-12 mt-4">
+                            <h2>Events and Activities That Require One</h2>
+                            <table className="table">
+                                <thead>
+                                    <tr>
+                                        <th>Activity/Sport</th>
+                                        <th>Require</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Marathons & Triathlons</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>School/College Sports</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>International Competitions</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Military/Police Exams</td>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Recreational Clubs</td>
+                                        <td>Sometimes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gym Memberships</td>
+                                        <td>Sometimes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                        <h2>Key Types of Medical Fitness Certificates for Athletes</h2>
-                        <ul className="custom-list">
-                            <li><strong>Competitive Sports Certificate:</strong> For professional-level tournaments and
-                                training.</li>
-                            <li><strong>Recreational Fitness Certificate:</strong> For gyms, community sports, or weekend
-                                events.</li>
-                            <li><strong>School/College Fitness Forms:</strong> Required by institutions for sports and physical
-                                activities.</li>
-                        </ul>
+                        <div className="col-12 mt-4">
+                            <h2>Key Types of Medical Fitness Certificates for Athletes</h2>
+                            <ul className="custom-list">
+                                <li><strong>Competitive Sports Certificate:</strong> For professional-level tournaments and
+                                    training.</li>
+                                <li><strong>Recreational Fitness Certificate:</strong> For gyms, community sports, or weekend
+                                    events.</li>
+                                <li><strong>School/College Fitness Forms:</strong> Required by institutions for sports and physical
+                                    activities.</li>
+                            </ul>
+                        </div>
 
-                        <h2>Why Choose PulseQuik for Your Sports Medical Certificate?</h2>
-                        <ul className="custom-list">
-                            <li><strong>Global Availability:</strong> Certificates customized for Australia, U.S., Europe,
-                                India, and more.</li>
-                            <li><strong>Fast Turnaround:</strong> Delivered same-day, often within 30–40 minutes.</li>
-                            <li><strong>Doctor-Signed & Legal:</strong> Issued by certified doctors and fully compliant.</li>
-                        </ul>
+                        <div className="col-12 mt-4">
+                            <h2>Why Choose PulseQuik for Your Sports Medical Certificate?</h2>
+                            <ul className="custom-list">
+                                <li><strong>Global Availability:</strong> Certificates customized for Australia, U.S., Europe,
+                                    India, and more.</li>
+                                <li><strong>Fast Turnaround:</strong> Delivered same-day, often within 30–40 minutes.</li>
+                                <li><strong>Doctor-Signed & Legal:</strong> Issued by certified doctors and fully compliant.</li>
+                            </ul>
+                        </div>
 
-                        <h2>Step-by-Step Process to Get Your Sports Medical Certificate</h2>
-                        <ul className="custom-list">
-                            <li><strong>Step 1:</strong> Choose the purpose (school, marathon, Ironman, visa, etc.)</li>
-                            <li><strong>Step 2:</strong> Fill out a health form (conditions, surgeries, asthma, activity levels)
-                            </li>
-                            <li><strong>Step 3:</strong> Doctor reviews your form or contacts you via teleconsultation if needed
-                            </li>
-                            <li><strong>Step 4:</strong> Certificate is delivered to WhatsApp/Email within 30–40 minutes</li>
-                        </ul>
+                        <div className="col-12 mt-4">
+                            <h2>Step-by-Step Process to Get Your Sports Medical Certificate</h2>
+                            <ul className="custom-list">
+                                <li><strong>Step 1:</strong> Choose the purpose (school, marathon, Ironman, visa, etc.)</li>
+                                <li><strong>Step 2:</strong> Fill out a health form (conditions, surgeries, asthma, activity levels)
+                                </li>
+                                <li><strong>Step 3:</strong> Doctor reviews your form or contacts you via teleconsultation if needed
+                                </li>
+                                <li><strong>Step 4:</strong> Certificate is delivered to WhatsApp/Email within 30–40 minutes</li>
+                            </ul>
+                        </div>
 
-                        <h2>Custom Formats for Schools, Colleges, and Sports Events</h2>
-                        <ul className="custom-list">
-                            <li>Upload institution- or event-specific forms</li>
-                            <li>Request custom headers or ministry-required fields</li>
-                            <li>Get Ironman, UltraMarathon, or triathlon-compliant formats</li>
-                        </ul>
+                        <div className="col-12 mt-4">
+                            <h2>Custom Formats for Schools, Colleges, and Sports Events</h2>
+                            <ul className="custom-list">
+                                <li>Upload institution- or event-specific forms</li>
+                                <li>Request custom headers or ministry-required fields</li>
+                                <li>Get Ironman, UltraMarathon, or triathlon-compliant formats</li>
+                            </ul>
+                        </div>
 
-                        <h2>What’s Included in a PulseQuik Medical Fitness Certificate?</h2>
-                        <ul className="custom-list">
-                            <li><strong>Full Name:</strong> Applicant’s name</li>
-                            <li><strong>Date of Birth & Age:</strong> Verified info</li>
-                            <li><strong>Assessment Date:</strong> When fitness was certified</li>
-                            <li><strong>Declared Fit For:</strong> Activity/Sport</li>
-                            <li><strong>Medical Practitioner:</strong> Name, Signature, and License</li>
-                            <li><strong>Optional Health Notes:</strong> Doctor’s comments</li>
-                        </ul>
-                        <p><strong>Optional Add-ons:</strong></p>
-                        <ul className="custom-list">
-                            <li>Resting heart rate</li>
-                            <li>Blood pressure</li>
-                            <li>Body Mass Index (BMI)</li>
-                            <li>Condition-specific advice</li>
-                        </ul>
+                        <div className="col-12 mt-4">
+                            <h2>What’s Included in a PulseQuik Medical Fitness Certificate?</h2>
+                            <ul className="custom-list">
+                                <li><strong>Full Name:</strong> Applicant’s name</li>
+                                <li><strong>Date of Birth & Age:</strong> Verified info</li>
+                                <li><strong>Assessment Date:</strong> When fitness was certified</li>
+                                <li><strong>Declared Fit For:</strong> Activity/Sport</li>
+                                <li><strong>Medical Practitioner:</strong> Name, Signature, and License</li>
+                                <li><strong>Optional Health Notes:</strong> Doctor’s comments</li>
+                            </ul>
+                            <p><strong>Optional Add-ons:</strong></p>
+                            <ul className="custom-list">
+                                <li>Resting heart rate</li>
+                                <li>Blood pressure</li>
+                                <li>Body Mass Index (BMI)</li>
+                                <li>Condition-specific advice</li>
+                            </ul>
+                        </div>
 
-                        <h2>How PulseQuik Ensures Legal and Medical Compliance</h2>
-                        <ul className="custom-list">
-                            <li>Every certificate is signed by a licensed doctor</li>
-                            <li>Valid for Australia, Canada, U.S., UK, India, Europe</li>
-                            <li>Region-specific formatting and terminology used</li>
-                        </ul>
+                        <div className="col-12 mt-4">
+                            <h2>How PulseQuik Ensures Legal and Medical Compliance</h2>
+                            <ul className="custom-list">
+                                <li>Every certificate is signed by a licensed doctor</li>
+                                <li>Valid for Australia, Canada, U.S., UK, India, Europe</li>
+                                <li>Region-specific formatting and terminology used</li>
+                            </ul>
+                        </div>
 
-                        <h2>Conclusion: PulseQuik is Your Fast Lane to Medical Clearance</h2>
-                        <p>
-                            Whether you&apos;re joining a school team, racing in Ironman, or applying for a visa, PulseQuik makes it
-                            fast, affordable, and professional to get your sports medical certificate.
-                        </p>
-                        <p>
-                            No appointments. No stress. Just fast fitness validation from doctors you can trust.
-                        </p>
+                        <div className="col-12 mt-4">
+                            <h2>Conclusion: PulseQuik is Your Fast Lane to Medical Clearance</h2>
+                            <p>
+                                Whether you&apos;re joining a school team, racing in Ironman, or applying for a visa, PulseQuik makes it
+                                fast, affordable, and professional to get your sports medical certificate.
+                            </p>
+                            <p>
+                                No appointments. No stress. Just fast fitness validation from doctors you can trust.
+                            </p>
+                        </div>
 
                         <div className="col-xl-4 d-xl-flex justify-content-xl-end align-items-center text-left mt-4 mt-xl-0">
                             <CertificateButton

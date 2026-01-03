@@ -34,12 +34,8 @@ export default function MedicalFitnessCertificate() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">how to get medical fitness certificate online – Everything You Need to Know</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mb-3 mt-4">
+                            <h2 className="pb-2">how to get medical fitness certificate online – Everything You Need to Know</h2>
                             <p>
                                 A Medical Fitness Certificate is an document that confirms an individual's physical and mental well-being for employment, sports participation, travel, or legal purposes.
                                 Whether you're an employee, athlete, student, or individual requiring medical clearance, this certificate ensures that you meet the required health standards.
@@ -49,12 +45,8 @@ export default function MedicalFitnessCertificate() {
                             </p>
                         </div>
 
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">What is a Medical Fitness Certificate?</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mt-4">
+                            <h2 className="pb-2">What is a Medical Fitness Certificate?</h2>
                             <p>
                                 A Medical Fitness Certificate is issued by a certified doctor verifying that an individual is medically fit to perform specific activities, such as:
                             </p>
@@ -67,12 +59,8 @@ export default function MedicalFitnessCertificate() {
                             </ul>
                         </div>
 
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">Who Needs a Medical Fitness Certificate?</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mt-4">
+                            <h2 className="pb-2">Who Needs a Medical Fitness Certificate?</h2>
                             <p>
                                 A Medical Fitness Certificate is required in various professional and personal scenarios:
                             </p>
@@ -85,12 +73,8 @@ export default function MedicalFitnessCertificate() {
                             </ul>
                         </div>
 
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">Why Get Your Medical Fitness Certificate Online with Pulsequik?</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mt-4">
+                            <h2 className="pb-2">Why Get Your Medical Fitness Certificate Online with Pulsequik?</h2>
                             <ul className="custom-list">
                                 <li><strong>Fast & Time-Saving</strong> – Get your certificate within 40 minutes.</li>
                                 <li><strong>100% Online Process</strong> – No need for physical hospital visits.</li>
@@ -100,12 +84,8 @@ export default function MedicalFitnessCertificate() {
                             </ul>
                         </div>
 
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">How to Apply and Get a Medical Fitness Certificate Online?</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mt-4">
+                            <h2 className="pb-2">How to Apply and Get a Medical Fitness Certificate Online?</h2>
                             <p>
                                 Traditionally, obtaining a Medical Fitness Certificate required hospital visits, long wait times, and doctor consultations. But with Pulsequik, the process is now quick and secure.
                             </p>

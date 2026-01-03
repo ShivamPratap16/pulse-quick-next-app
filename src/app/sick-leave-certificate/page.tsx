@@ -34,12 +34,8 @@ export default function SickLeaveCertificate() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">Get a Sick Leave Certificate Online within 40 Minutes – Fast, Legitimate & Hassle-Free</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-md-12 mb-3 mt-4">
+                            <h2 className="pb-2">Get a Sick Leave Certificate Online within 40 Minutes – Fast, Legitimate & Hassle-Free</h2>
                             <p>
                                 Need a sick leave certificate for work, school, or personal commitments? When you're unwell, the last thing you want is to sit in a crowded waiting room or book an inconvenient doctor's appointment.
                             </p>
@@ -47,12 +43,8 @@ export default function SickLeaveCertificate() {
                                 At Pulsequik, we make it easy to get a certified sick leave certificate online—quickly, securely, and without unnecessary hassle. Simply apply online, and receive your legally valid medical certificate within 40 minutes, right from the comfort of your home.
                             </p>
                         </div>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h3>What is a Sick Leave Certificate?</h3>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mt-4">
+                            <h3 className="pb-2">What is a Sick Leave Certificate?</h3>
                             <p>
                                 A sick leave certificate, also known as a medical certificate, is an document issued by a licensed doctor confirming your illness and advising rest. It is commonly required by:
                             </p>
@@ -70,12 +62,8 @@ export default function SickLeaveCertificate() {
                                 <li>Secure and professional documentation, accepted by most organizations.</li>
                             </ul>
                         </div>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h3>How to Get a Sick Leave Certificate Online with Pulsequik?</h3>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mt-4">
+                            <h3 className="pb-2">How to Get a Sick Leave Certificate Online with Pulsequik?</h3>
                             <ul className="custom-list">
                                 <li><strong>Complete a Quick Online Form:</strong> Visit Pulsequik.com, enter your symptoms, personal details, and requested leave duration.</li>
                                 <li><strong>Consultation (If Required):</strong> Some cases may require a brief online review by a licensed doctor to verify your condition.</li>
@@ -83,12 +71,8 @@ export default function SickLeaveCertificate() {
                             </ul>
                             <p>💡 <strong>Average processing time: Just 30-40 minutes!</strong></p>
                         </div>
-                        <div className="col-md-12">
-                            <div className="text-container pb-2">
-                                <h4>Why Choose Pulsequik for Your Sick Leave Certificate?</h4>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12 mt-4">
+                            <h4 className="pb-2">Why Choose Pulsequik for Your Sick Leave Certificate?</h4>
                             <ul className="custom-list">
                                 <li>Legitimate & Certified – All certificates are issued by licensed medical professionals.</li>
                                 <li>Fast Processing – Get your certificate in minutes, not hours or days.</li>
