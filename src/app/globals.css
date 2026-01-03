@@ -375,6 +375,14 @@ ul.custom-list li span {
   font-weight: 500;
 }
 
+/* Hero Banner - Using external hero-banner.css for responsiveness */
+/* Fix image cropping from top - Anchor to top */
+.medical-certificate-ad .hero-bg-mobile,
+.medical-certificate-ad .hero-bg-tablet,
+.medical-certificate-ad .hero-bg-desktop {
+    object-position: top center !important;
+}
+
 /* Hero Banner - Home Page (left-aligned as original) */
 /* No centering applied - keeping original layout */
 
@@ -397,7 +405,7 @@ ul.custom-list li span {
 .pq-breadcrumb,
 .pq-breadcrumb ul,
 .pq-breadcrumb-section .pq-breadcrumb {
-    padding-left: 15px !important;
+    padding-left: 20px !important;
 }
 
 .pq-breadcrumb-section .col-12,
@@ -412,8 +420,8 @@ section.pq-90 .container {
     width: 100% !important;
     max-width: 1320px !important;
     margin: 0 auto !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
 }
 
 section .row {
