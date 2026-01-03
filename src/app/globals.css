@@ -205,10 +205,10 @@ a {
         width: 100%;
     }
 
-    /* Force fit menu items - Compact spacing */
+    /* Force fit menu items - Improved Spacing (Medical Cert removed) */
     #pq-header .pq-bottom-header .navbar .navbar-nav li {
-        margin-right: 8px !important; 
-        font-size: 10px !important; 
+        margin-right: 18px !important; /* Increased from 8px to 18px for better breathing room */
+        font-size: 12px !important; /* Restored readability */
     }
     
     /* Optimize Button for Tablet */

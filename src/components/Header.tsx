@@ -130,7 +130,6 @@ export default function Header() {
                                     <div id="pq-menu-contain" className="pq-menu-contain">
                                         <ul id="pq-main-menu" className="navbar-nav ml-auto">
                                             <li className="menu-item"><Link href="/" onClick={closeMenu}>Home</Link></li>
-                                            <li className="menu-item"><Link href="/medical-certificates" onClick={closeMenu}>Medical Certificates</Link></li>
                                             <li className="menu-item"><Link href="/international-medical-certificate" onClick={closeMenu}>International Certificate</Link></li>
                                             <li className="menu-item">
                                                 <a href="#" onClick={(e) => e.preventDefault()}>
