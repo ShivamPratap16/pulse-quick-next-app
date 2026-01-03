@@ -9,8 +9,6 @@ import { MEDICAL_URL } from "@/lib/constants";
 
 export default function Header() {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-    const [isVisible, setIsVisible] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
     const navRef = useRef<HTMLDivElement>(null);
 
     const toggleNavbar = () => {
@@ -42,22 +40,7 @@ export default function Header() {
         };
     }, [isMobileNavOpen]);
 
-    // Smart Navbar Logic
-    useEffect(() => {
-        const controlNavbar = () => {
-            if (typeof window !== 'undefined') {
-                if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                    setIsVisible(false);
-                } else {
-                    setIsVisible(true);
-                }
-                setLastScrollY(window.scrollY);
-            }
-        };
 
-        window.addEventListener('scroll', controlNavbar);
-        return () => window.removeEventListener('scroll', controlNavbar);
-    }, [lastScrollY]);
 
     return (
         <header id="pq-header" className="pq-header-default">
@@ -109,12 +92,12 @@ export default function Header() {
             </div>
             <div 
                 ref={navRef}
-                className={`pq-bottom-header pq-has-sticky sticky-nav-animated ${isVisible ? 'nav-visible' : 'nav-hidden'}`}
+                className="pq-bottom-header pq-has-sticky"
             >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <nav className="navbar navbar-expand-md navbar-light">
+                            <nav className="navbar navbar-expand-xl navbar-light">
                                 <Link className="navbar-brand" href="/" onClick={closeMenu}>
                                     <Image
                                         src="/assets/images/logo/main-small.webp"

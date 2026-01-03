@@ -18,7 +18,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                 )}
                 <div className="row">
                     {/* Sick Leave */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -39,7 +39,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Recovery */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -60,7 +60,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Caretaker */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -80,7 +80,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Medical Fitness */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -100,7 +100,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* CARA Fitness */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -120,7 +120,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Unfit to Travel */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -140,7 +140,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Form 1A */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -160,7 +160,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Work From Home */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -180,7 +180,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Fit to Fly */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
@@ -200,7 +200,7 @@ export default function CertificateSection({ className = "", title }: { classNam
                         </div>
                     </div>
                     {/* Sports Fitness */}
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-6 col-md-6 mb-4">
                         <div className="pq-icon-box pq-style-4">
                             <div className="pq-icon-box-wrapper">
                                 <div className="pq-icon">
