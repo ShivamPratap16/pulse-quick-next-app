@@ -14,7 +14,7 @@ interface BlogPost {
     publishedAt: string;
     featuredImage: any;
     excerpt: string;
-    author?: string;
+    authorName?: string;
 }
 
 export default async function BlogListingPage() {
@@ -59,7 +59,7 @@ export default async function BlogListingPage() {
                                     <h2 className={styles.blogTitle}>{post.title}</h2>
                                     <p className={styles.blogExcerpt}>{post.excerpt}</p>
                                     <div className={styles.cardFooter}>
-                                        <span className={styles.author}>{post.author || 'Pulse Quick Info'}</span>
+                                        <span className={styles.author}>{post.authorName || 'Pulse Quick Info'}</span>
                                         <span className={styles.readMore}>Read &rarr;</span>
                                     </div>
                                 </div>

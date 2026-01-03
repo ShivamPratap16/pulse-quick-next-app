@@ -7,7 +7,8 @@ export const POSTS_QUERY = defineQuery(`*[_type == "post" && defined(slug.curren
   publishedAt,
   featuredImage,
   "excerpt": array::join(string::split((pt::text(content)), "")[0..200], "") + "...",
-  author
+
+  "authorName": author->name
 }`);
 
 
