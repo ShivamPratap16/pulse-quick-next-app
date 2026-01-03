@@ -188,31 +188,108 @@ a {
     }
 }
 
-/* Tablet specific adjustments */
-@media (min-width: 768px) and (max-width: 991px) {
-    .navbar-collapse {
-        justify-content: flex-start !important;
+/* Tablet and Small Laptop Optimization (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* Desktop layout overrides for tablet */
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto !important;
+        align-items: center !important;
+        justify-content: flex-end !important; /* Right align to prevent left overflow */
     }
     
-    #pq-main-menu {
-        margin: 0 !important;
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        width: 100%;
+    }
+
+    /* Force fit menu items - Compact spacing */
+    #pq-header .pq-bottom-header .navbar .navbar-nav li {
+        margin-right: 8px !important; 
+        font-size: 10px !important; 
+    }
+    
+    /* Optimize Button for Tablet */
+    .pq-button.pq-button-flat {
+        padding: 6px 10px !important;
+        font-size: 10px !important;
+        margin-left: 8px !important;
+        white-space: nowrap !important;
+    }
+
+    /* Shrink Logo */
+    .navbar-brand .site-logo {
+        width: 120px !important;
+        height: auto !important;
+    }
+    
+    /* Ensure no wrapping */
+    .navbar-nav .nav-link,
+    .navbar-nav .menu-item a {
+        white-space: nowrap !important;
+        display: flex !important;
+        align-items: center !important;
+        height: 100%;
+    }
+    
+    .navbar {
+        padding: 5px 0 !important;
     }
 }
 
-/* Ensure responsive behavior is consistent */
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
+/* Base Desktop Layout Rules (Applied to MD and Up) */
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
         display: flex !important;
         flex-basis: auto !important;
+        align-items: center !important;
     }
     
-    .navbar-expand-lg .navbar-nav {
+    .navbar-expand-md .navbar-nav {
         flex-direction: row !important;
+        align-items: center !important;
     }
     
-    .navbar-expand-lg .navbar-nav .menu-item {
+    .navbar-expand-md .navbar-nav .menu-item {
         padding-left: 0 !important;
         padding-right: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        height: 100%;
+    }
+
+    .navbar-nav .nav-link,
+    .navbar-nav .menu-item a {
+        white-space: nowrap !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* Services Icon alignment - Now simpler as it's inside the flex A tag */
+    .pq-submenu-icon {
+        margin-left: 5px !important;
+        margin-top: 1px !important; /* Visual optical adjustment */
+        font-size: 0.9em !important;
+    }
+}
+
+/* Standard Laptop Screens (1200px to 1450px) */
+@media (min-width: 1200px) and (max-width: 1450px) {
+    #pq-header .pq-bottom-header .navbar .navbar-nav li {
+        margin-right: 12px !important;
+        font-size: 13px !important;
+    }
+
+    .navbar-brand .site-logo {
+        width: 160px !important;
+        height: auto !important;
+    }
+    
+    .pq-button.pq-button-flat {
+        padding: 8px 15px !important;
+        font-size: 12px !important;
     }
 }
 

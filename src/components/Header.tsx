@@ -114,7 +114,7 @@ export default function Header() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <nav className="navbar navbar-expand-lg navbar-light">
+                            <nav className="navbar navbar-expand-md navbar-light">
                                 <Link className="navbar-brand" href="/" onClick={closeMenu}>
                                     <Image
                                         src="/assets/images/logo/main-small.webp"
@@ -133,7 +133,9 @@ export default function Header() {
                                             <li className="menu-item"><Link href="/medical-certificates" onClick={closeMenu}>Medical Certificates</Link></li>
                                             <li className="menu-item"><Link href="/international-medical-certificate" onClick={closeMenu}>International Certificate</Link></li>
                                             <li className="menu-item">
-                                                <a href="#" onClick={(e) => e.preventDefault()}>Services</a><i className="fa fa-chevron-down pq-submenu-icon"></i>
+                                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                                    Services <i className="fa fa-chevron-down pq-submenu-icon"></i>
+                                                </a>
                                                 <ul className="sub-menu">
                                                     <li className="menu-item"><Link href="/sick-leave-certificate/" onClick={closeMenu}>Sick Leave Certificate</Link></li>
                                                     <li className="menu-item"><Link href="/work-from-home-certificate/" onClick={closeMenu}>WFH Certificate</Link></li>
