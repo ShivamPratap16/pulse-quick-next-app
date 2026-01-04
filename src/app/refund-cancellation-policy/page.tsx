@@ -28,12 +28,8 @@ export default function RefundPolicy() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">Refund/Cancellation Policy</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12">
+                            <h2 className="mb-3">Refund/Cancellation Policy</h2>
                             <p>
                                 At Pulsequik, we have a flexible refund policy. Here's when you can get a refund:
                             </p>

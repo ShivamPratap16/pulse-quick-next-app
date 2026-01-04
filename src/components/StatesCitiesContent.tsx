@@ -105,17 +105,26 @@ export default function StatesCitiesContent() {
 
     return (
         <React.Fragment>
+            <style dangerouslySetInnerHTML={{__html: `
+                .strict-alignment-box {
+                    text-align: left !important;
+                }
+                .strict-alignment-box h5,
+                .strict-alignment-box p {
+                    text-align: left !important;
+                    width: 100% !important;
+                    display: block !important;
+                }
+            `}} />
             {/* Hero Section */}
             <section className="pq-90">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h1>Get Medical Certificates Online – Across India and Worldwide</h1>
-                                <p className="lead">
-                                    PulseQuik provides legitimate, doctor-verified medical certificates for all Indian cities, USA cities, and international locations that also online from anywhere. Be it a fitness certificate, sick leave certificate, recovery certificate, or fit-to-travel certificate, our online platform connects you to authorized doctors who can provide you with valid digital certificates within minutes.
-                                </p>
-                            </div>
+                        <div className="col-12 mb-3">
+                            <h1 className="mb-3">Get Medical Certificates Online – Across India and Worldwide</h1>
+                            <p className="lead">
+                                PulseQuik provides legitimate, doctor-verified medical certificates for all Indian cities, USA cities, and international locations that also online from anywhere. Be it a fitness certificate, sick leave certificate, recovery certificate, or fit-to-travel certificate, our online platform connects you to authorized doctors who can provide you with valid digital certificates within minutes.
+                            </p>
                             <p>
                                 We are proud to provide services to individuals, workers, and organizations in all Indian cities — and internationally in the USA, China, Germany, Australia, Singapore, Dubai, Canada, and the UK.
                             </p>
@@ -131,14 +140,14 @@ export default function StatesCitiesContent() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row mb-5">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h2 className="mb-4">📋 Online Form 1A Fitness Certificate</h2>
                             <p className="mb-4">Official Form 1A medical fitness certificates for driving license applications – available for all Indian states.</p>
                         </div>
                     </div>
 
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h4 className="text-primary mb-3">All Indian States & Union Territories</h4>
                             <div className="row">
                                 {indianStates.map((state) => (
@@ -158,14 +167,14 @@ export default function StatesCitiesContent() {
             <section className="pq-90 bg-light">
                 <div className="container">
                     <div className="row mb-5">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h2 className="mb-4">🏥 Online Medical Sick Leave Certificate</h2>
                             <p className="mb-4">Doctor-certified sick leave certificates for work and school absences – available across India.</p>
                         </div>
                     </div>
 
                     <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h4 className="text-primary mb-3 d-flex justify-content-between align-items-center">
                                 <span>India – Cities Available</span>
                                 <button onClick={() => setExpandSickLeaveIndia(!expandSickLeaveIndia)} className="btn btn-sm btn-outline-primary">
@@ -194,7 +203,7 @@ export default function StatesCitiesContent() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row mb-5">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h2 className="mb-4">🏥 Online Medical Certificate</h2>
                             <p className="mb-4">Quick medical certificates for work, travel, school, and general health needs – available in major Indian cities.</p>
                         </div>
@@ -202,7 +211,7 @@ export default function StatesCitiesContent() {
 
                     {/* India Cities - Collapsible */}
                     <div className="row mb-4">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h4 className="text-primary mb-3 d-flex justify-content-between align-items-center">
                                 <span>India – Cities Available</span>
                                 <button onClick={() => setExpandMedicalIndia(!expandMedicalIndia)} className="btn btn-sm btn-outline-primary">
@@ -227,7 +236,7 @@ export default function StatesCitiesContent() {
 
                     {/* USA Cities - Collapsible */}
                     <div className="row mb-4">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h4 className="text-primary mb-3 d-flex justify-content-between align-items-center">
                                 <span>USA – Cities Available</span>
                                 <button onClick={() => setExpandMedicalUSA(!expandMedicalUSA)} className="btn btn-sm btn-outline-primary">
@@ -252,7 +261,7 @@ export default function StatesCitiesContent() {
 
                     {/* International Cities - Collapsible */}
                     <div className="row mb-4">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h4 className="text-primary mb-3 d-flex justify-content-between align-items-center">
                                 <span>International – Cities Available</span>
                                 <button onClick={() => setExpandMedicalIntl(!expandMedicalIntl)} className="btn btn-sm btn-outline-primary">
@@ -281,51 +290,51 @@ export default function StatesCitiesContent() {
             <section className="pq-90 bg-light">
                 <div className="container">
                     <div className="row mb-4">
-                        <div className="col-md-12">
+                        <div className="col-12">
                             <h2 className="mb-4">📄 Other Available Certificates</h2>
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="pq-fancy-box">
-                                <h5>Medical Fitness Certificate</h5>
-                                <p>For gym membership, sports, and fitness activities.</p>
+                            <div className="p-4 shadow-sm bg-white rounded border-0 text-start h-100 d-flex flex-column align-items-start strict-alignment-box">
+                                <div style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', textAlign: 'left', width: '100%', fontFamily: 'var(--title-fonts)', color: 'var(--dark-color)' }}>Medical Fitness Certificate</div>
+                                <div style={{ textAlign: 'left', width: '100%', marginBottom: '15px', color: 'var(--secondary-color)' }}>For gym membership, sports, and fitness activities.</div>
                                 <Link href="/medical-fitness-certificate/" className="pq-button pq-button-flat">Learn More</Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="pq-fancy-box">
-                                <h5>CARA Fitness Certificate</h5>
-                                <p>For commercial vehicle drivers and Heavy Goods Vehicle operations.</p>
+                            <div className="p-4 shadow-sm bg-white rounded border-0 text-start h-100 d-flex flex-column align-items-start strict-alignment-box">
+                                <div style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', textAlign: 'left', width: '100%', fontFamily: 'var(--title-fonts)', color: 'var(--dark-color)' }}>CARA Fitness Certificate</div>
+                                <div style={{ textAlign: 'left', width: '100%', marginBottom: '15px', color: 'var(--secondary-color)' }}>For commercial vehicle drivers and Heavy Goods Vehicle operations.</div>
                                 <Link href="/cara-fitness-certificate/" className="pq-button pq-button-flat">Learn More</Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="pq-fancy-box">
-                                <h5>Recovery Certificate</h5>
-                                <p>Post-treatment medical clearance and recovery documentation.</p>
+                            <div className="p-4 shadow-sm bg-white rounded border-0 text-start h-100 d-flex flex-column align-items-start strict-alignment-box">
+                                <div style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', textAlign: 'left', width: '100%', fontFamily: 'var(--title-fonts)', color: 'var(--dark-color)' }}>Recovery Certificate</div>
+                                <div style={{ textAlign: 'left', width: '100%', marginBottom: '15px', color: 'var(--secondary-color)' }}>Post-treatment medical clearance and recovery documentation.</div>
                                 <Link href="/recovery-certificate/" className="pq-button pq-button-flat">Learn More</Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="pq-fancy-box">
-                                <h5>Caretaker Certificate</h5>
-                                <p>For leave to care for family members or dependents.</p>
+                            <div className="p-4 shadow-sm bg-white rounded border-0 text-start h-100 d-flex flex-column align-items-start strict-alignment-box">
+                                <div style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', textAlign: 'left', width: '100%', fontFamily: 'var(--title-fonts)', color: 'var(--dark-color)' }}>Caretaker Certificate</div>
+                                <div style={{ textAlign: 'left', width: '100%', marginBottom: '15px', color: 'var(--secondary-color)' }}>For leave to care for family members or dependents.</div>
                                 <Link href="/caretaker-certificate/" className="pq-button pq-button-flat">Learn More</Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="pq-fancy-box">
-                                <h5>Work From Home Certificate</h5>
-                                <p>Medical justification for remote work arrangements.</p>
+                            <div className="p-4 shadow-sm bg-white rounded border-0 text-start h-100 d-flex flex-column align-items-start strict-alignment-box">
+                                <div style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', textAlign: 'left', width: '100%', fontFamily: 'var(--title-fonts)', color: 'var(--dark-color)' }}>Work From Home Certificate</div>
+                                <div style={{ textAlign: 'left', width: '100%', marginBottom: '15px', color: 'var(--secondary-color)' }}>Medical justification for remote work arrangements.</div>
                                 <Link href="/work-from-home-certificate/" className="pq-button pq-button-flat">Learn More</Link>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 mb-4">
-                            <div className="pq-fancy-box">
-                                <h5>Unfit to Travel Certificate</h5>
-                                <p>Medical documentation for travel delays or cancellations.</p>
+                            <div className="p-4 shadow-sm bg-white rounded border-0 text-start h-100 d-flex flex-column align-items-start strict-alignment-box">
+                                <div style={{ fontSize: '24px', fontWeight: '600', marginBottom: '10px', textAlign: 'left', width: '100%', fontFamily: 'var(--title-fonts)', color: 'var(--dark-color)' }}>Unfit to Travel Certificate</div>
+                                <div style={{ textAlign: 'left', width: '100%', marginBottom: '15px', color: 'var(--secondary-color)' }}>Medical documentation for travel delays or cancellations.</div>
                                 <Link href="/unfit-to-travel-certificate/" className="pq-button pq-button-flat">Learn More</Link>
                             </div>
                         </div>

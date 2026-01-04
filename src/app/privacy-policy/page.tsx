@@ -28,12 +28,8 @@ export default function PrivacyPolicy() {
             <section className="pq-90">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-3">
-                            <div className="text-container pb-2">
-                                <h2 className="">Privacy Policy</h2>
-                            </div>
-                        </div>
-                        <div className="col-md-12">
+                        <div className="col-12">
+                            <h2 className="mb-3">Privacy Policy</h2>
                             <p>
                                 This Privacy Policy describes how PulseQuik collects, uses, and discloses personal information when you use our telemedicine platform and related services. We are committed to protecting your privacy and complying with applicable data protection laws, including the guidelines set forth by the National Medical Commission (NMC).
                             </p>
