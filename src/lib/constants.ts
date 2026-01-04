@@ -5,6 +5,7 @@ export const FORM1A_URL = process.env.NEXT_PUBLIC_FORM_1A_CERTIFICATE || "";
 export const CARA_FORM_URL = process.env.NEXT_PUBLIC_CARA_FORM_URL || "";
 export const DOCTOR_CONSULTATION_URL = process.env.NEXT_PUBLIC_DOCTOR_CONSULTATION || "";
 export const INTL_URL = process.env.NEXT_PUBLIC_INTL_CERTIFICATE || "";
+export const INTL_PAGE_ROUTE = "/international-medical-certificate";
 export const CAREER_URL = process.env.NEXT_PUBLIC_CAREER_FORM || "";
 
 export const indianCities = [
