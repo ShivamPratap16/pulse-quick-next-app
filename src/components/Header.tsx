@@ -9,6 +9,7 @@ import { MEDICAL_URL } from "@/lib/constants";
 
 export default function Header() {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+    const [isServicesOpen, setIsServicesOpen] = useState(false);
     const navRef = useRef<HTMLDivElement>(null);
 
     const toggleNavbar = () => {
@@ -114,21 +115,39 @@ export default function Header() {
                                         <ul id="pq-main-menu" className="navbar-nav ml-auto">
                                             <li className="menu-item"><Link href="/" onClick={closeMenu}>Home</Link></li>
                                             <li className="menu-item"><Link href="/international-medical-certificate" onClick={closeMenu}>International Certificate</Link></li>
-                                            <li className="menu-item">
-                                                <a href="#" onClick={(e) => e.preventDefault()}>
+                                            <li 
+                                                className="menu-item"
+                                                onMouseEnter={() => setIsServicesOpen(true)}
+                                                onMouseLeave={() => setIsServicesOpen(false)}
+                                            >
+                                                <a 
+                                                    href="#" 
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        setIsServicesOpen(!isServicesOpen);
+                                                    }}
+                                                    aria-expanded={isServicesOpen}
+                                                >
                                                     Services <i className="fa fa-chevron-down pq-submenu-icon"></i>
                                                 </a>
-                                                <ul className="sub-menu">
-                                                    <li className="menu-item"><Link href="/sick-leave-certificate/" onClick={closeMenu}>Sick Leave Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/work-from-home-certificate/" onClick={closeMenu}>WFH Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/recovery-certificate/" onClick={closeMenu}>Recovery Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/medical-fitness-certificate/" onClick={closeMenu}>Medical Fitness Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/form-1a-fitness-certificate/" onClick={closeMenu}>Form 1A Fitness Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/cara-fitness-certificate/" onClick={closeMenu}>Cara Fitness Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/unfit-to-travel-certificate/" onClick={closeMenu}>Unfit To Travel Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/fit-to-fly-certificate/" onClick={closeMenu}>Fit To Travel/Fly Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/caretaker-certificate/" onClick={closeMenu}>Caretaker Certificate</Link></li>
-                                                    <li className="menu-item"><Link href="/sports-medical-certificate/" onClick={closeMenu}>Sports Medical Certificate</Link></li>
+                                                <ul 
+                                                    className="sub-menu"
+                                                    style={{ 
+                                                        display: isServicesOpen ? 'block' : 'none',
+                                                        visibility: isServicesOpen ? 'visible' : 'hidden',
+                                                        opacity: isServicesOpen ? 1 : 0
+                                                    }}
+                                                >
+                                                    <li className="menu-item"><Link href="/sick-leave-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Sick Leave Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/work-from-home-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>WFH Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/recovery-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Recovery Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/medical-fitness-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Medical Fitness Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/form-1a-fitness-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Form 1A Fitness Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/cara-fitness-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Cara Fitness Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/unfit-to-travel-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Unfit To Travel Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/fit-to-fly-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Fit To Travel/Fly Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/caretaker-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Caretaker Certificate</Link></li>
+                                                    <li className="menu-item"><Link href="/sports-medical-certificate/" onClick={() => { setIsServicesOpen(false); closeMenu(); }}>Sports Medical Certificate</Link></li>
                                                 </ul>
                                             </li>
                                             <li className="menu-item"><Link href="/about-us" onClick={closeMenu}>About Us</Link></li>
