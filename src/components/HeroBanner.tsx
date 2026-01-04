@@ -4,7 +4,11 @@
 import Image from "next/image";
 import { MEDICAL_URL } from "@/lib/constants";
 
+import { useCertificateRedirect } from "@/hooks/useCertificateRedirect";
+
 export default function HeroBanner() {
+    const finalUrl = useCertificateRedirect(MEDICAL_URL);
+
     return (
         <div className="medical-certificate-ad">
             <Image
@@ -46,7 +50,7 @@ export default function HeroBanner() {
                 <p className="description">
                     medical letters when you need it.
                 </p>
-                <a href={MEDICAL_URL} target="_blank" className="cta-button">
+                <a href={finalUrl} target="_blank" className="cta-button">
                     GET YOUR MEDICAL CERTIFICATE <span className="plus-icon">+</span>
                 </a>
             </div>

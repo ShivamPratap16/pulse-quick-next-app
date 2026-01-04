@@ -4,6 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import Testimonials from '@/components/Testimonials';
 import ProcessTow from '@/components/ProcessTow';
 import { INTL_URL } from '@/lib/constants';
+import CertificateButton from '@/components/CertificateButton';
 import { getMetadata } from '@/lib/meta-data';
 import { getBreadcrumbItems } from '@/lib/breadcrumb';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
@@ -78,26 +79,10 @@ export default function InternationalMedicalCertificate() {
                     <div className="row">
                         <div className="col-lg-12 mt-4">
                             {/* Using a direct anchor tag styled as a button to match Vue implementation */}
-                            <a
-                                className="pq-button pq-button-flat"
-                                href={INTL_URL || '#'}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ textDecoration: 'none' }}
-                            >
-                                <div className="pq-button-block">
-                                    <span className="pq-button-text">Get International Medical Certificate</span>
-                                    <span className="plus-icon" style={{
-                                        fontWeight: 'bold',
-                                        fontSize: '18px',
-                                        display: 'inline-flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        height: '30px',
-                                        marginLeft: '10px'
-                                    }}>+</span>
-                                </div>
-                            </a>
+                            <CertificateButton 
+                                indianUrl={INTL_URL} 
+                                buttonText="Get International Medical Certificate" 
+                             />
                         </div>
                     </div>
                 </div>
