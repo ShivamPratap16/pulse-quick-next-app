@@ -11,6 +11,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import CertificateSection from '@/components/CertificateSection';
 import ProcessTow from '@/components/ProcessTow';
+import { indianCities } from '@/lib/constants';
 
 // Metadata function
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -60,13 +61,16 @@ async function getPageData(slug: string) {
     else if (slug.startsWith('online-medical-sick-leave-certificate-in-')) {
         pageType = 'sick-leave';
         cityKey = slug.replace('online-medical-sick-leave-certificate-in-', '');
-        isIndia = cityKey === 'india';
-        const nameFormatted = formatName(cityKey);
-        pageTitle = isIndia ? 'Online Medical Sick Leave Certificate in India' : `Online Medical Sick Leave Certificate in ${nameFormatted}`;
-        certificateName = 'Sick Leave';
+        
+        // precise check if it's an Indian city
+        const isIndianLocation = cityKey === 'india' || indianCities.includes(cityKey);
 
-        breadcrumbItems.push({ label: 'Online Sick Leave Certificate in India', ...(!isIndia ? { href: '/online-medical-sick-leave-certificate-in-india' } : { active: true }) });
-        if (!isIndia) breadcrumbItems.push({ label: nameFormatted, active: true });
+        const nameFormatted = formatName(cityKey);
+        pageTitle = isIndianLocation ? 'Online Medical Sick Leave Certificate in India' : `Online Medical Sick Leave Certificate in ${nameFormatted}`;
+        certificateName = isIndianLocation ? 'Sick Leave' : 'International';
+
+        breadcrumbItems.push({ label: 'Online Sick Leave Certificate in India', ...(!isIndianLocation ? { href: '/online-medical-sick-leave-certificate-in-india' } : { active: true }) });
+        if (!isIndianLocation) breadcrumbItems.push({ label: nameFormatted, active: true });
     }
     // 3. USA Medical Certificate
     else if (slug.startsWith('online-medical-certificate-in-usa-')) {
@@ -96,13 +100,16 @@ async function getPageData(slug: string) {
     else if (slug.startsWith('online-medical-certificate-in-')) {
         pageType = 'medical-india';
         cityKey = slug.replace('online-medical-certificate-in-', '');
-        isIndia = cityKey === 'india';
+        
+        // precise check if it's an Indian city
+        const isIndianLocation = cityKey === 'india' || indianCities.includes(cityKey);
+        
         const nameFormatted = formatName(cityKey);
-        pageTitle = isIndia ? 'Online Medical Certificate in India' : `Online Medical Certificate in ${nameFormatted}`;
-        certificateName = 'Medical';
+        pageTitle = isIndianLocation ? 'Online Medical Certificate in India' : `Online Medical Certificate in ${nameFormatted}`;
+        certificateName = isIndianLocation ? 'Medical' : 'International';
 
-        breadcrumbItems.push({ label: 'Online Medical Certificate in India', ...(!isIndia ? { href: '/online-medical-certificate-in-india' } : { active: true }) });
-        if (!isIndia) breadcrumbItems.push({ label: nameFormatted, active: true });
+        breadcrumbItems.push({ label: 'Online Medical Certificate in India', ...(!isIndianLocation ? { href: '/online-medical-certificate-in-india' } : { active: true }) });
+        if (!isIndianLocation) breadcrumbItems.push({ label: nameFormatted, active: true });
     }
 
     return { pageType, cityKey, pageTitle, breadcrumbItems, certificateName };

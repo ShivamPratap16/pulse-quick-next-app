@@ -521,3 +521,23 @@ section.contact-us.pq-bg-primary-dark .pq-button {
     box-shadow: none !important;
     color: white !important;
 }
+
+/* Fix for Button Block Layout (Form 1A Issue) */
+.pq-button-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap; /* Prevent icon from wrapping to next line oddly */
+}
+
+.pq-button-text {
+    white-space: normal; /* Allow text to wrap if really long */
+    margin-right: 10px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.pq-button-block i {
+    flex-shrink: 0; /* Prevent icon from shrinking/squishing */
+}
