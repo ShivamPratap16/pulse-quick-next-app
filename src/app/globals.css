@@ -512,3 +512,12 @@ section.contact-us.pq-bg-primary-dark .pq-button {
     }
 }
 
+
+/* Override for Hero Banner Button Focus State - Force Reset */
+.cta-button:focus, 
+.cta-button:active {
+    background-color: rgb(36, 144, 235) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: white !important;
+}
