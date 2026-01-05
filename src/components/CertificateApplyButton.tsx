@@ -2,6 +2,7 @@
 "use client";
 
 import { FORM1A_URL, CARA_FORM_URL, MEDICAL_URL } from "@/lib/constants";
+import { useCertificateRedirect } from "@/hooks/useCertificateRedirect";
 
 type Props = {
     certificate_name: string;
@@ -18,10 +19,12 @@ export default function CertificateApplyButton({ certificate_name, buttonText = 
         paymentLink = MEDICAL_URL;
     }
 
+    const finalLink = useCertificateRedirect(paymentLink);
+
     return (
         <>
             <a
-                href={paymentLink}
+                href={finalLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ms-auto pq-apply-btn"
